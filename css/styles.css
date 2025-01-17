@@ -1,0 +1,149 @@
+/* Algemene stijl voor de hele website */
+body {
+    font-family: 'Orbitron', sans-serif; /* Zorgt ervoor dat Orbitron overal wordt gebruikt */
+    color: #333; /* Tekstkleur (donkergrijs) */
+    line-height: 1.6; /* Betere leesbaarheid door regelhoogte */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Zachte achtergrondkleur */
+}
+
+/* Algemene opmaak voor het logo */
+header {
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center;    /* Verticaal centreren (voor het geval je header een vaste hoogte heeft) */
+    padding: 10px;          /* Ruimte rondom het logo */
+}
+
+#logo {
+    max-width: 100%;      /* Logo schaalt met de breedte van het scherm */
+    height: auto;         /* Behoud de verhouding van het logo */
+    max-height: 80px;     /* Maximale hoogte voor het logo */
+}
+
+/* Artikel-sectie */
+article {
+    padding: 20px; /* Ruimte rondom de tekst */
+    max-width: 800px; /* Beperkt de breedte van de inhoud voor leesbaarheid */
+    margin: 0 auto; /* Centreert de tekst op de pagina */
+    background: #fff; /* Witte achtergrond */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Zachte schaduw rondom artikel */
+    border-radius: 8px; /* Licht afgeronde hoeken */
+}
+
+/* Stijlen voor koppen */
+h2 {
+    font-size: 1.8em;
+    color: #4a4a8d; /* Paarsige kleur die past bij het logo */
+    text-align: center; /* Koppen gecentreerd */
+    margin-top: 20px;
+}
+
+/* Stijlen voor paragrafen */
+p {
+    font-size: 1em; /* Standaard tekengrootte */
+    text-align: justify; /* Uitlijning van tekst */
+    margin-bottom: 20px;
+}
+
+article > img {
+    max-width: 100%; /* Zorgt ervoor dat de afbeelding nooit breder is dan de container */
+    height: auto; /* Houdt de verhoudingen van de afbeelding correct */
+    margin: 0 auto; /* Centreert de afbeelding */
+    border-radius: 8px; /* Maakt de hoeken afgerond */
+    display: block; /* Zorgt ervoor dat de afbeelding een blok-element is */
+}
+
+.button-container {
+    display: flex; /* Maakt de knoppen flex-items */
+    justify-content: center; /* Centreert de knoppen horizontaal */
+    gap: 15px; /* Ruimte tussen de knoppen */
+    margin-top: 20px; /* Optioneel: ruimte boven de knoppen */
+}
+
+article a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0; /* Margin op de knoppen is niet nodig als we gap gebruiken */
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4a4a8d;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+article a:hover {
+    background-color: #363676;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+article a:focus {
+    outline: 2px dashed #fff;
+    outline-offset: 4px;
+}
+
+
+/* Zorgt ervoor dat de h2 en het hamburgermenu naast elkaar staan */
+#menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Ruimte onder de container */
+}
+
+/* Styling voor het hamburgermenu */
+#hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #4a4a8d;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Verborgen menu standaard */
+#menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#menu li:last-child {
+    border-bottom: none;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Actief menu tonen */
+#menu.active {
+    display: block;
+}
+
+
