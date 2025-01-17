@@ -8,7 +8,7 @@ body {
     background-color: #f4f4f9; /* Zachte achtergrondkleur */
 }
 
-/* Algemene opmaak voor het logo */
+/* Algemene opmaak voor de header */
 header {
     display: flex;
     justify-content: center; /* Horizontaal centreren */
@@ -47,6 +47,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Afbeeldingen in het artikel */
 article > img {
     max-width: 100%; /* Zorgt ervoor dat de afbeelding nooit breder is dan de container */
     height: auto; /* Houdt de verhoudingen van de afbeelding correct */
@@ -55,6 +56,7 @@ article > img {
     display: block; /* Zorgt ervoor dat de afbeelding een blok-element is */
 }
 
+/* Knop-container */
 .button-container {
     display: flex; /* Maakt de knoppen flex-items */
     justify-content: center; /* Centreert de knoppen horizontaal */
@@ -62,10 +64,10 @@ article > img {
     margin-top: 20px; /* Optioneel: ruimte boven de knoppen */
 }
 
+/* Stijl voor de knoppen */
 article a {
     display: inline-block;
     padding: 10px 20px;
-    margin: 0; /* Margin op de knoppen is niet nodig als we gap gebruiken */
     font-size: 1em;
     font-weight: bold;
     color: #fff;
@@ -76,24 +78,32 @@ article a {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover-effect voor knoppen */
 article a:hover {
     background-color: #363676;
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Focus-effect voor knoppen */
 article a:focus {
     outline: 2px dashed #fff;
     outline-offset: 4px;
 }
 
-
-/* Zorgt ervoor dat de h2 en het hamburgermenu naast elkaar staan */
+/* Menu-container */
 #menu-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Zorgt ervoor dat de elementen (tekst en hamburgermenu) aan de zijkanten komen */
     margin-bottom: 20px; /* Ruimte onder de container */
+    width: 100%;
+}
+
+/* Menu-tekst centreren */
+#menu-text {
+    flex-grow: 1; /* Laat deze container de resterende ruimte opvullen */
+    text-align: center; /* Zorgt ervoor dat de tekst gecentreerd wordt */
 }
 
 /* Styling voor het hamburgermenu */
@@ -115,7 +125,7 @@ article a:focus {
     transition: all 0.3s ease;
 }
 
-/* Verborgen menu standaard */
+/* Menu */
 #menu {
     display: none;
     list-style: none;
@@ -126,6 +136,7 @@ article a:focus {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Menu-item */
 #menu li {
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
@@ -135,6 +146,7 @@ article a:focus {
     border-bottom: none;
 }
 
+/* Menu-link */
 #menu li a {
     text-decoration: none;
     color: white;
