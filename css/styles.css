@@ -32,6 +32,7 @@ article {
     border-radius: 8px; /* Licht afgeronde hoeken */
 }
 
+
 /* Stijlen voor koppen */
 h2 {
     font-size: 1.8em;
@@ -311,4 +312,137 @@ article a:focus {
 .faq summary {
     font-weight: bold;
     cursor: pointer;
+}
+
+.contact-container a {
+    background: none !important;
+    padding: 0 !important;
+    border: none !important;
+    display: inline; /* Zorgt ervoor dat het geen blok-element wordt */
+    box-shadow: none;
+}
+
+.contact-container {
+    background: #f4f4f9;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-container h2 {
+    color: #40407a;
+}
+
+.contact-container p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-container a {
+    color: #40407a;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-container a:hover {
+    color: #40407ab0;
+    box-shadow: none;
+}
+
+/* Standaardinstellingen voor grotere schermen */
+@media screen and (min-width: 768px) {
+    
+    /* Zorg ervoor dat de pagina gecentreerd blijft */
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Header uitlijnen */
+    header {
+        justify-content: center; /* Logo links en menu rechts */
+        padding: 20px;
+    }
+
+    #logo {
+        max-height: 100px; /* Groter logo op grotere schermen */
+    }
+
+    /* Menu-container aanpassen */
+    #menu-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #menu {
+        display: flex; /* Maakt het menu altijd zichtbaar op grotere schermen */
+        background: none;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #menu li {
+        border-bottom: none;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    #menu li a {
+        color: white;
+        font-size: 1.1em;
+    }
+
+    /* Hamburger-menu verbergen op grotere schermen */
+    #hamburger-menu {
+        display: none;
+    }
+
+    /* Artikel sectie verbreden */
+    article {
+        max-width: 1000px;
+        padding: 40px;
+    }
+
+    /* Knoppen breder maken */
+    .button-container {
+        flex-direction: row; /* Zorgt ervoor dat knoppen naast elkaar staan */
+    }
+
+    /* Agenda en boekingspagina mooi verdelen */
+    .agenda, .booking-form-container, .contact-info, .faq {
+        max-width: 1000px;
+    }
+
+    /* Evenementen in een grid tonen */
+    .event-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mooie verdeling */
+        gap: 20px;
+    }
+
+    /* Contactinformatie in 2 kolommen tonen */
+    .contact-info {
+        display: flex;
+    flex-direction: column;
+    align-items: center; /* Centreert de inhoud */
+    background: #f8f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Voorkomt te brede weergave */
+    margin: 0 auto; /* Centreert de sectie */
+    }
+
+    .contact-info div {
+        width: 48%;
+    }
+
+    .stagediven {
+        display: none;
+    }
 }
