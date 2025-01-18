@@ -160,7 +160,6 @@ article a:focus {
 
 /* Algemene stijl voor de agenda */
 .agenda {
-    font-family: Arial, sans-serif;
     padding: 20px;
     background-color: #f4f4f9;
     color: #333;
@@ -219,10 +218,4 @@ article a:focus {
     opacity: 0.7;
 }
 
-/* .event-item.archived .event-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
-} */
 
