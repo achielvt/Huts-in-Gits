@@ -158,4 +158,71 @@ article a:focus {
     display: block;
 }
 
+/* Algemene stijl voor de agenda */
+.agenda {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.agenda h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #4a4a8d;
+}
+
+/* Lijst van evenementen */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styling voor een enkel evenement */
+.event-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-item h2 {
+    font-size: 1.6em;
+    color: #4a4a8d;
+}
+
+.event-item p {
+    margin: 5px 0;
+}
+
+.ticket-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #4a4a8d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.ticket-link:hover {
+    background-color: #363676;
+}
+
+/* Archief evenementen */
+.event-item.archived {
+    background-color: #f9f9f9;
+    opacity: 0.7;
+}
+
+/* .event-item.archived .event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+} */
 
