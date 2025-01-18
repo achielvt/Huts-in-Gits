@@ -219,3 +219,96 @@ article a:focus {
 }
 
 
+/* Algemene styling voor de boekingspagina */
+.booking-form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form-container h1 {
+    text-align: center;
+    color: #4a4a8d;
+}
+
+.booking-form-container form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.booking-form-container form input,
+.booking-form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-form-container form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4a4a8d;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form-container form button:hover {
+    background-color: #363676;
+}
+
+/* Contactinformatie sectie */
+.contact-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #4a4a8d;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ sectie */
+.faq {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    color: #4a4a8d;
+}
+
+.faq details {
+    margin: 10px 0;
+}
+
+.faq summary {
+    font-weight: bold;
+    cursor: pointer;
+}
