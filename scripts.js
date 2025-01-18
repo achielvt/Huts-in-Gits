@@ -21,7 +21,7 @@ const events = [
     {
         title: "Festivachiel",
         date: "11-07-2025",
-        time: "20:00",
+        time: "onbepaald",
         location: "onbepaald",
         ticketLink: "ticket-verkoop-link.html",
         archived: false,
