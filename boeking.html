@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boek Nu - Huts in Gits</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo/logo_gsm.png" alt="logo Huts in Gits">
+    </header>
+    
+    <article>
+        <div id="menu-container">
+            <div id="menu-text">
+            <h2></h2>
+            </div>
+            <div id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Over Ons</a></li>
+            <li><a href="boeking.html">Boek Nu</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+    <main>
+        <section class="booking-form-container">
+            <h1>Boek Huts in Gits</h1>
+            <p>Vul onderstaand formulier in om een boekingsaanvraag te doen. Wij nemen zo snel mogelijk contact met je op!</p>
+
+            <form id="booking-form" action="submit-booking.php" method="POST">
+                <label for="name">Naam</label>
+                <input type="text" id="name" name="name" placeholder="Uw volledige naam" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Uw e-mailadres" required>
+
+                <label for="event-date">Datum van het evenement</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <label for="location">Locatie</label>
+                <input type="text" id="location" name="location" placeholder="Locatie van het evenement" required>
+
+                <label for="details">Details</label>
+                <textarea id="details" name="details" placeholder="Eventuele opmerkingen of details..." rows="5"></textarea>
+
+                <button type="submit">Verstuur Boekingsaanvraag</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact</h2>
+            <p>E-mailadres: <a href="mailto:info.hutsingits@gmail.com">info.hutsingits@gmail.com</a></p>
+            <p>Telefoonnummer: <a href="tel:+32 0473 84 26 81">+32 0473 84 26 81</a></p>
+            <p>Managementbureau: <strong>Scouts Gits</strong></p>
+        </section>
+
+        <section class="faq">
+            <h2>Veelgestelde vragen</h2>
+            <details>
+                <summary>Wat zijn de boekingsvoorwaarden?</summary>
+                <p>De boeking is pas bevestigd na het ontvangen van een aanbetaling. Annuleringskosten kunnen van toepassing zijn.</p>
+            </details>
+            <details>
+                <summary>Wat is de maximale speeltijd?</summary>
+                <p>De maximale speeltijd is 3 uur, met de mogelijkheid tot een verlenging tegen een extra vergoeding.</p>
+            </details>
+            <details>
+                <summary>Welke apparatuur is nodig?</summary>
+                <p>Huts in Gits brengt zijn eigen DJ-set mee. Een goed geluidssysteem en verlichting zijn vereist.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Huts in Gits. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
