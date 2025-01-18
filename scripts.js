@@ -10,28 +10,28 @@ document.addEventListener("DOMContentLoaded", function () {
 // Evenementenlijst (kan ook uit een externe bron komen zoals een JSON-bestand)
 const events = [
     {
-        title: "Huts in Gits - Feest in Roeselare",
-        date: "2025-01-25",
-        time: "20:00",
-        location: "Club XYZ, Roeselare",
-        ticketLink: "ticket-verkoop-link.html",
-        archived: false,
-        image: null
-    },
-    {
-        title: "Huts in Gits - Feest in Gent",
-        date: "2025-01-30",
+        title: "Interstella",
+        date: "2025-02-15",
         time: "22:00",
-        location: "Evenementenhal Gent",
+        location: "Jeugdhuis De Vlinder, Gits",
         ticketLink: "ticket-verkoop-link.html",
         archived: false,
         image: null
     },
     {
-        title: "Huts in Gits - Feest in Antwerpen",
-        date: "2024-12-10",
+        title: "Festivachiel",
+        date: "2025-07-11",
+        time: "20:00",
+        location: "onbepaald",
+        ticketLink: "ticket-verkoop-link.html",
+        archived: false,
+        image: null
+    },
+    {
+        title: "Oudejaarsavond",
+        date: "2024-12-31",
         time: "23:00",
-        location: "Antwerpse Plek",
+        location: "Jeugdhuis De Vlinder, Gits",
         ticketLink: null,
         archived: true,
         review: "Geweldige show! Het publiek was compleet gek."
