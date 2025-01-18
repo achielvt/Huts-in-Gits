@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const events = [
     {
         title: "Interstella",
-        date: "2025-02-15",
+        date: "15-02-2025",
         time: "22:00",
         location: "Jeugdhuis De Vlinder, Gits",
         ticketLink: "ticket-verkoop-link.html",
@@ -20,7 +20,7 @@ const events = [
     },
     {
         title: "Festivachiel",
-        date: "2025-07-11",
+        date: "11-07-2025",
         time: "20:00",
         location: "onbepaald",
         ticketLink: "ticket-verkoop-link.html",
@@ -29,7 +29,7 @@ const events = [
     },
     {
         title: "Oudejaarsavond",
-        date: "2024-12-31",
+        date: "31-12-2024",
         time: "23:00",
         location: "Jeugdhuis De Vlinder, Gits",
         ticketLink: null,
